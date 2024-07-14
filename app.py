@@ -1,4 +1,10 @@
 import streamlit as st
+
+# Set the page configuration
+st.set_page_config(
+    page_title="LangGPT",
+)
+
 from transformers import TFAutoModelForSeq2SeqLM, AutoTokenizer
 
 repo_name = "shinigami-srikar/langgpt-pretrained"
